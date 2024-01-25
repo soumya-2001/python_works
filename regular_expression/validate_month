@@ -1,0 +1,11 @@
+# month 01-12
+
+from re import*
+
+month=input("Enter number")
+rule="(0[1-9]|1[0-2])"
+
+matcher=fullmatch(rule,month)
+
+print("Valid" if matcher!=None else "Invalid")
+
